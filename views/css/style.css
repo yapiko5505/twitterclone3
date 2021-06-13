@@ -69,6 +69,10 @@ a {
     color:#1af;
     text-decoration: none;
 }
+
+.text-sm {
+    font-size: 0.7rem;
+}
 /*サイド*/
 .side .side-inner {
     top:0px;
@@ -345,3 +349,43 @@ body.signup {
     margin-right: 30px;
     color: #778;
 }
+
+/* 検索 */
+.search .search-area {
+    display: flex;
+    padding: 15px;
+}
+.search .search-area input {
+    width: 70%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+/* 通知 */
+.notification .notification-list .no-result {
+    padding: 20px;
+}
+
+.notification .notification-list .notification-item {
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+.notification .notification-list .notification-item .user {
+    width: 70px;
+    padding: 5px 15px 10px 10px;
+}
+.notification .notification-list .notification-item .user img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(235, 238, 240);
+}
+.notification .notification-list .notification-item .user img .content {
+    width: 100%;
+}
+.notification .notification-list .notification-item .user img .content p {
+    font-size: 16px;
+    padding: 8px 0 0 0;
+    margin-bottom: 8px;
+}
+
+

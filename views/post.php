@@ -1,11 +1,19 @@
+<?php
+// 設定関連を読み込む
+include_once('../config.php');
+// 便利な関数を読み込む
+include_once('../util.php');
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     
     <?php include_once('../views/common/head.php'); ?>
-    <title>ホーム画面/twitterクローン</title>
-    <meta name="discription" content="ホーム画面です">
+    <title>つぶやく画面/twitterクローン</title>
+    <meta name="discription" content="つぶやく画面です">
 
 </head>
 <body class="home">
@@ -13,7 +21,7 @@
         <?php include_once('../views/common/side.php'); ?>
         <div class="main">
             <div class="main-header">
-                <h1>ホーム</h1>
+                <h1>つぶやく</h1>
                 
             </div>
             <div class="tweet-post">
@@ -35,16 +43,7 @@
             </div>
             <div class="ditch"></div>
 
-            <?php if (empty($view_tweets)): ?>
-                <p class="p-3">ツイートがまだありません</p>
-            <?php else: ?>
-                <div class="tweet-list">
-                    <?php foreach ($view_tweets as $view_tweet): ?>
-                        <?php include('../views/common/tweet.php'); ?>
-                    <?php endforeach; ?>
 
-                </div>
-            <?php endif;?>
         </div>
     </div>
 
